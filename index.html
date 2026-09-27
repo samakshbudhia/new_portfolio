@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samaksh Budhia / Digital Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { corePlugins: { preflight: false } };</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <a href="#home" class="side-logo">S<span>.</span>Budhia</a>
+        <div class="side-rule"></div>
+        <nav>
+            <a href="#home" class="active"><span>01</span> Home</a>
+            <a href="#work"><span>02</span> Projects</a>
+            <a href="#about"><span>03</span> About</a>
+            <a href="#journey"><span>04</span> Education</a>
+            <a href="#contact"><span>05</span> Contact</a>
+        </nav>
+        <div class="side-bottom"><span>Based in</span><strong>India / 2026</strong></div>
+    </aside>
+
+    <div class="page">
+        <header class="topbar">
+            <span class="availability"><i></i> Available for ideas</span>
+            <div class="topbar-actions">
+                <button id="palette-toggle" class="palette-toggle" type="button">Palette: <span id="palette-text">Light Blue</span> ↻</button>
+                <button id="theme-toggle" class="theme-toggle" type="button">◐ <span id="theme-text">DARK MODE</span></button>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-topline"><span>Computer science student</span><span>Scroll to discover ↓</span></div>
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <p class="micro-label">Hello, I’m Samaksh</p>
+                        <h1>Learning to<br><span>make things.</span></h1>
+                        <p class="hero-note">I’m learning to turn curiosity into useful digital experiences — one line of code, one experiment, and one project at a time.</p>
+                        <div class="hero-links"><a href="#work" class="primary-button">My projects <b>↓</b></a><span>First-year computer science student<br>Currently learning web development</span></div>
+                    </div>
+                    <div class="hero-side-note"><span>Currently working on</span><strong>Getting the<br>basics right.</strong><i>01 — 04</i></div>
+                </div>
+                <div class="marquee"><span>BUILD · LEARN · ITERATE · BUILD · LEARN · ITERATE · </span></div>
+            </section>
+
+            <section id="work" class="work section-pad">
+                <div class="section-bar"><span>02 / Selected projects</span><span>Small steps, real outcomes.</span></div>
+                <div class="work-heading"><h2>Things I’ve<br><i>made</i>.</h2><p>Exploring web development through practical projects that solve small problems and sharpen bigger ideas.</p></div>
+                <div class="project-list">
+                    <article class="project-row">
+                        <span class="row-number">01</span>
+                        <div class="row-icon" aria-hidden="true">▤</div>
+                        <div><p class="project-type">Web concept · HTML + CSS</p><h3>Student Portal</h3><p>A useful home base for student life: profile, schedule, and course browsing brought together in one clear interface.</p></div>
+                        <a href="#contact" aria-label="Ask about Student Portal">↗</a>
+                    </article>
+                    <article class="project-row">
+                        <span class="row-number">02</span>
+                        <div class="row-icon">✳</div>
+                        <div><p class="project-type">HTML + CSS</p><h3>Mini Game UI</h3><p>A playful interface concept for casual mini-games.</p></div>
+                        <span class="row-arrow">↗</span>
+                    </article>
+                    <article class="project-row">
+                        <span class="row-number">03</span>
+                        <div class="row-icon">⌘</div>
+                        <div><p class="project-type">HTML + CSS + JavaScript</p><h3>Personal Portfolio</h3><p>A living document of what I’m learning and building.</p></div>
+                        <span class="row-arrow">↗</span>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about" class="about section-pad">
+                <div class="section-bar"><span>03 / A little more</span><span>Behind the work.</span></div>
+                <div class="about-layout"><div class="about-photo"><img src="photo.png" alt="Samaksh Budhia"><span>Computer science<br>student</span></div><div class="about-copy"><h2>Curious by<br><i>default.</i></h2><p class="lead">I like asking “how could this work better?” and then building a small version to find out.</p><p>I’m studying computer science while developing my foundations in programming and web development. I enjoy solving problems, learning from mistakes, and improving what I build.</p><div class="tool-cloud"><span>C++</span><span>Java</span><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Data structures</span></div></div></div>
+            </section>
+
+            <section id="journey" class="journey section-pad">
+                <div class="section-bar"><span>04 / Education</span><span>Where I’m learning.</span></div>
+                <div class="journey-grid">
+                    <article><span>2026 — Present</span><h3>BSc Computer Science</h3><p>BITS Pilani</p></article>
+                    <article><span>2026 — Present</span><h3>Integrated CS &amp; AI</h3><p>Scaler School of Technology</p></article>
+                    <article><span>2023 — 2025</span><h3>Senior Secondary</h3><p>Jawahar Vidya Mandir</p></article>
+                    <article><span>2023</span><h3>ICSE</h3><p>St. Thomas School</p></article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact section-pad">
+                <div class="contact-grid"><div><p class="micro-label">04 / Say hello</p><h2>Let’s build<br><i>something.</i></h2></div><div class="contact-card"><p>Have an idea, question, or feedback? My inbox is open.</p><a href="mailto:samakshbudhia@gmail.com" aria-label="Email Samaksh">Email me <b>↗</b></a><div class="socials"><a href="https://github.com/samakshbudhia" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/samaksh-budhia-a2477341b/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></div>
+            </section>
+        </main>
+        <footer><span>Samaksh Budhia / Digital builder</span><span>Made with curiosity ✳</span></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
